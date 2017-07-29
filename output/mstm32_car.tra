@@ -1,0 +1,35 @@
+*** Creating Trace Output File '.\output\mstm32_car.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\output\main.o"'
+### List of Objects: adding '".\output\stm32f4xx_it.o"'
+### List of Objects: adding '".\output\motor.o"'
+### List of Objects: adding '".\output\usart.o"'
+### List of Objects: adding '".\output\sonar.o"'
+### List of Objects: adding '".\output\delay.o"'
+### List of Objects: adding '".\output\fuzzy_decision.o"'
+### List of Objects: adding '".\output\servo.o"'
+### List of Objects: adding '".\output\pid.o"'
+### List of Objects: adding '".\output\stm32f4xx_gpio.o"'
+### List of Objects: adding '".\output\stm32f4xx_rcc.o"'
+### List of Objects: adding '".\output\stm32f4xx_tim.o"'
+### List of Objects: adding '".\output\misc.o"'
+### List of Objects: adding '".\output\stm32f4xx_usart.o"'
+### List of Objects: adding '".\output\startup_stm32f40_41xxx.o"'
+### List of Objects: adding '".\output\system_stm32f4xx.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp ".\output\main.o" ".\output\stm32f4xx_it.o" ".\output\motor.o" ".\output\usart.o" ".\output\sonar.o" ".\output\delay.o" ".\output\fuzzy_decision.o" ".\output\servo.o" ".\output\pid.o" ".\output\stm32f4xx_gpio.o" ".\output\stm32f4xx_rcc.o" ".\output\stm32f4xx_tim.o" ".\output\misc.o" ".\output\stm32f4xx_usart.o" ".\output\startup_stm32f40_41xxx.o" ".\output\system_stm32f4xx.o" 
+--strict --scatter ".\output\mstm32_car.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\mstm32_car.map" -o .\output\mstm32_car.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\output\mstm32_car.axf'
+### ADS-LD Command File: '.\output\mstm32_car.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\output\mstm32_car.lnp', Handle=0x000006E8
+### Writing '.lnp' file
+### ADS-LD Command file '.\output\mstm32_car.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

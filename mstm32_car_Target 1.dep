@@ -1,0 +1,2 @@
+Dependencies for Project 'mstm32_car', Target 'Target 1': (DO NOT MODIFY !)
+F (.\main.c)(0x00000000)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I "C:\Program Files\Keil_v4\ARM\RV31\INC" -I "C:\Program Files\Keil_v4\ARM\CMSIS\Include" -I "C:\Program Files\Keil_v4\ARM\Inc\ST\STM32F4xx" -o "main.o" --omf_browse "main.crf" --depend "main.d")

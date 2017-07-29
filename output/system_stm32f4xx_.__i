@@ -1,0 +1,5 @@
+-c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork -I.\library\inc -I.\startup -I.\user --c99 
+-I "C:\Program Files\Keil_v4\ARM\RV31\INC" 
+-I "C:\Program Files\Keil_v4\ARM\CMSIS\Include" 
+-I "C:\Program Files\Keil_v4\ARM\Inc\ST\STM32F4xx" 
+-DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DUSE_FULL_ASSERT -o ".\output\system_stm32f4xx_.o" --omf_browse ".\output\system_stm32f4xx_.crf" --depend ".\output\system_stm32f4xx_.d" "startup\system_stm32f4xx_.c"
