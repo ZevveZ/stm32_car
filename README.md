@@ -11,7 +11,7 @@
 ### PID控制模块
 
 1. PID控制原理
-![](readme_images/Picture2.png)
+![](https://zh.wikipedia.org/zh-cn/PID%E6%8E%A7%E5%88%B6%E5%99%A8#/media/File:Pid-feedback-nct-int-correct.png "由英语维基百科的SilverStar - Made using en:Microsoft Word, Originally from en.wikipedia; description page is/was here.，CC BY-SA 3.0，https://commons.wikimedia.org/w/index.php?curid=2767373")
 
 2. PID算法介绍
 PID控制可以分为模拟PID控制和数字PID控制。由于计算机实现微分和积分运算比较复杂，因此一般使用数字PID控制。
