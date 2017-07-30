@@ -22,7 +22,7 @@ static float sonar_trigger(void);
 /**
 @brief		配置与超声波模块有关的时钟，GPIO，定时器
 @param		None
-@retval 	None
+@retval		None
 */
 void sonar_config(void)
 {
@@ -33,7 +33,7 @@ void sonar_config(void)
 /**
 @brief		调用此函数扫描当前方向的障碍物
 @param		None
-@retval 	障碍物的距离信息，单位为m，如果障碍物的距离超过检测的范围将返回SONAR_INFINITE_DISTANCE
+@retval		障碍物的距离信息，单位为m，如果障碍物的距离超过检测的范围将返回SONAR_INFINITE_DISTANCE
 @note		调用此函数前需要先调用舵机模块对应的函数，调整好舵机的方向
 */
 float sonar_scan_barrier(void)
@@ -46,7 +46,7 @@ float sonar_scan_barrier(void)
 /**
 @brief		配置超声波模块所需的时钟
 @param		None
-@retval 	None
+@retval		None
 */
 void sonar_rcc_config(void)
 {
@@ -56,7 +56,7 @@ void sonar_rcc_config(void)
 /**
 @brief		配置超声波模块所需的GPIO
 @param		None
-@retval 	None
+@retval		None
 */
 void sonar_gpio_config(void)
 {
@@ -83,7 +83,7 @@ void sonar_gpio_config(void)
 /**
 @brief		配置超声波模块所需的定时器
 @param		None
-@retval 	None
+@retval		None
 */
 void sonar_tim_config(void)
 {
@@ -100,7 +100,7 @@ void sonar_tim_config(void)
 /**
 @brief		触发超声波传感器探测障碍物
 @param		None
-@retval 	超声波往返时间，单位为s
+@retval		超声波往返时间，单位为s
 @note		这是一个私有函数；这里使用轮询进行脉宽检测
 */
 static float sonar_trigger(void)

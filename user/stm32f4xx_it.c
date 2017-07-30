@@ -162,7 +162,7 @@ static int32_t overflow_cnt0, overflow_cnt1; ///<分别记录定时器1和定时
 /**
 @brief		记录定时器1的溢出计数
 @param		None
-@retval 	None
+@retval		None
 */
 void TIM1_UP_TIM10_IRQHandler(void)
 {
@@ -175,7 +175,7 @@ void TIM1_UP_TIM10_IRQHandler(void)
 /**
 @brief		记录定时器8的溢出计数
 @param		None
-@retval 	None
+@retval		None
 */
 void TIM8_UP_TIM13_IRQHandler(void)
 {
@@ -192,7 +192,7 @@ static int32_t last_cnt0, last_cnt1; ///<分别记录定时器1和定时器8的�
 @param		current 当前脉冲计数
 			last 上一次脉冲计数
 			dir 当前电机的转动方向
-@retval 	脉冲的变化量
+@retval		脉冲的变化量
 @note		根据电机的转动方向有两种计算方式
 */
 int32_t get_cnt_delta(int32_t current, int32_t last, MOTOR_DIRECTION dir)
@@ -210,7 +210,7 @@ int32_t get_cnt_delta(int32_t current, int32_t last, MOTOR_DIRECTION dir)
 /**
 @brief		定时器2每隔100ms会触发此中断进行PID控制，因此PID的采样周期为100ms
 @param		None
-@retval 	None
+@retval		None
 */
 void TIM1_CC_IRQHandler(void)
 {
@@ -235,7 +235,7 @@ void TIM1_CC_IRQHandler(void)
 /**
 @brief		用于与上位机调试PID，上位机根据绘制的PID图形发送比例系数，积分时间，微分时间给下位机，实时调整参数
 @param		None
-@retval 	None
+@retval		None
 @note		接收数据时注意大小端问题
 */
 void USART2_IRQHandler(void)
@@ -294,7 +294,7 @@ void USART2_IRQHandler(void)
 /**
 @brief		用于调试模糊决策算法的距离参数，包括安全阈值，障碍物远的距离，障碍物近的距离，模糊决策算法的时间变化量，模糊决策算法的作用时间，速度快的型心，速度慢的型心（参考论文模糊逻辑算法）
 @param		None
-@retval 	None
+@retval		None
 @note		通过调整上述的参数可以优化小车的避障效果；距离单位为m，时间单位为ms(模糊逻辑算法的时间变化量的单位为s)，速度单位为dm/s
 */
 /*

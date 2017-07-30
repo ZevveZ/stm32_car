@@ -5,7 +5,7 @@
 */
 /**
 @addtogroup delay
-@brief 		延时模块
+@brief		延时模块
 @{
 */
 #ifndef __DELAY_H

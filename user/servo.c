@@ -19,7 +19,7 @@ static void servo_tim_config(void);
 /**
 @brief		配置舵机控制所需的时钟，GPIO口和定时器,并将舵机转动到正前方
 @param		None
-@retval 	None
+@retval		None
 */
 void servo_config(void)
 {
@@ -32,7 +32,7 @@ void servo_config(void)
 /**
 @brief		初始化舵机控制所需的时钟
 @param		None
-@retval 	None
+@retval		None
 @note		这是一个私有函数
 */
 static void servo_rcc_config(void)
@@ -43,7 +43,7 @@ static void servo_rcc_config(void)
 /**
 @brief		初始化舵机控制所需的GPIO口
 @param		None
-@retval 	None
+@retval		None
 @note		这是一个私有函数
 */
 static void servo_gpio_config(void)
@@ -61,7 +61,7 @@ static void servo_gpio_config(void)
 /**
 @brief		初始化舵机控制的定时器
 @param		None
-@retval 	None
+@retval		None
 @note		这是一个私有函数
 */
 static void servo_tim_config(void)
@@ -86,7 +86,7 @@ static void servo_tim_config(void)
 /**
 @brief		控制舵机的转动方向
 @param		dir 可选SERVO_DIRECTION_LEFT，SERVO_DIRECTION_FRONT，SERVO_DIRECTION_RIGHT
-@retval 	None
+@retval		None
 @note		延时一段时间使舵机转动到位
 */
 void servo_turn_to(SERVO_DIRECTION dir)

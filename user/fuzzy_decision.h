@@ -5,7 +5,7 @@
 */
 /**
 @addtogroup fuzzy_decision
-@brief 		模糊决策算法模块
+@brief		模糊决策算法模块
 @{
 */
 #ifndef __FUZZY_DECISION_H

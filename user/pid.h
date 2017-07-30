@@ -5,7 +5,7 @@
 */
 /**
 @addtogroup pid
-@brief 		pid控制模块
+@brief		pid控制模块
 @{
 */
 
@@ -18,7 +18,7 @@
 /**
 @brief		配置PID控制所需的时钟和定时器，并初始化与PID控制有关的结构体
 @param		None
-@retval 	None
+@retval		None
 @note		在第一次使用PID控制前必须调用此函数进行时钟和定时器的配置，以后不需要调用此函数
 */
 void pid_config(void);

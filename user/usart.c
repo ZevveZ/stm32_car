@@ -16,7 +16,7 @@ static void usart_nvic_config(void);
 /**
 @brief		配置串口USART2的时钟和GPIO口，并初始化USART2
 @param		None
-@retval 	None
+@retval		None
 @note		调试时才需要调用此函数
 */
 void usart_config(void)
@@ -43,7 +43,7 @@ void usart_config(void)
 /**
 @brief		配置串口通信需要的时钟
 @param		None
-@retval 	None
+@retval		None
 @note		这是一个私有函数
 */
 static void usart_rcc_config(void)
@@ -54,7 +54,7 @@ static void usart_rcc_config(void)
 /**
 @brief		配置串口USART2的GPIO口
 @param		None
-@retval 	None
+@retval		None
 @note		这是一个私有函数
 */
 static void usart_gpio_config(void)
@@ -75,7 +75,7 @@ static void usart_gpio_config(void)
 /**
 @brief		配置串口USART2的中断
 @param		None
-@retval 	None
+@retval		None
 @note		这是一个私有函数；注意函数将串口中断配置为最高优先级，以便及时接收上位机发送的命令
 */
 static void usart_nvic_config(void)
@@ -93,7 +93,7 @@ static void usart_nvic_config(void)
 /**
 @brief		通过串口发送字符串
 @param		msg 指向待发送字符串的指针
-@retval 	None
+@retval		None
 */
 void usart_send_str(const char *msg)
 {
@@ -108,7 +108,7 @@ void usart_send_str(const char *msg)
 /**
 @brief		通过串口发送一个32位整型数据
 @param		data 待发送的32位整型数据
-@retval 	None
+@retval		None
 @note		从高位到低位发送数据，上位机接收时需要注意大小端问题
 */
 void usart_send_int32(const int32_t data)
@@ -131,7 +131,7 @@ void usart_send_int32(const int32_t data)
 /**
 @brief		通过串口发送一个字符型数据
 @param		c 待发送字符型数据
-@retval 	None
+@retval		None
 */
 void usart_send_char(const char c)
 {
@@ -144,7 +144,7 @@ void usart_send_char(const char c)
 /**
 @brief		通过串口发送一个浮点数据
 @param		data 待发送的浮点数据
-@retval 	None
+@retval		None
 @note		上位机接收时需要注意大小端问题
 */
 void usart_send_float(const float data)

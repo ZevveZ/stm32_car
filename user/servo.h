@@ -5,7 +5,7 @@
 */
 /**
 @addtogroup servo
-@brief 		舵机驱动模块
+@brief		舵机驱动模块
 @{
 */
 
@@ -19,13 +19,13 @@ typedef enum { SERVO_DIRECTION_LEFT = 25,
 /**
 @brief		配置舵机控制所需的时钟，GPIO口和定时器,并将舵机转动到正前方
 @param		None
-@retval 	None
+@retval		None
 */
 void servo_config(void);
 /**
 @brief		控制舵机的转动方向
 @param		dir 可选SERVO_DIRECTION_LEFT，SERVO_DIRECTION_FRONT，SERVO_DIRECTION_RIGHT
-@retval 	None
+@retval		None
 @note		延时一段时间使舵机转动到位
 */
 void servo_turn_to(SERVO_DIRECTION dir);

@@ -67,13 +67,13 @@ static void fuzzifier(const float *fp)
 		{
 			distance[i][1] = (DISTANCE_FAR - *fp) / (DISTANCE_FAR - DISTANCE_NEAR);
 		}
-		// 		if(*fp<=threshold_barrier_near){
-		// 			distance[i][1]=1;
-		// 		}else if (*fp>=threshold_barrier_far){
-		// 			distance[i][1]=0;
-		// 		}else{
-		// 			distance[i][1]=(threshold_barrier_far-*fp)/(threshold_barrier_far-threshold_barrier_near);
-		// 		}
+		//		if(*fp<=threshold_barrier_near){
+		//			distance[i][1]=1;
+		//		}else if (*fp>=threshold_barrier_far){
+		//			distance[i][1]=0;
+		//		}else{
+		//			distance[i][1]=(threshold_barrier_far-*fp)/(threshold_barrier_far-threshold_barrier_near);
+		//		}
 		distance[i][0] = 1 - distance[i][1];
 
 		fp++;
@@ -109,8 +109,8 @@ FUZZY_ST defuzzifier(void)
 	float defuzzy_beta = 0; ///<反模糊化得到的小车应该偏移的角度
 	float sum = 0;
 
-	// 	speed_core[0]=speed_fast;
-	// 	speed_core[1]=speed_low;
+	//	speed_core[0]=speed_fast;
+	//	speed_core[1]=speed_low;
 
 	for (int i = 0; i < SPEED_SUM; ++i)
 	{
