@@ -12,7 +12,7 @@
 #ifndef __SONAR_H
 #define __SONAR_H
 
-#define SONAR_INFINITE_DISTANCE -1.0f	///<如果障碍物的距离超过检测的范围就返回无限距离
+#define SONAR_INFINITE_DISTANCE -1.0f ///<如果障碍物的距离超过检测的范围就返回无限距离
 
 /**
 @brief		配置与超声波模块有关的时钟，GPIO，定时器

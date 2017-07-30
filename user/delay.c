@@ -6,10 +6,10 @@
 
 #include "delay.h"
 
-#define PRESCALER_US	1e6	///<微秒分频因子
-#define PRESCALER_MS	1e3	///<毫秒分频因子
+#define PRESCALER_US 1e6 ///<微秒分频因子
+#define PRESCALER_MS 1e3 ///<毫秒分频因子
 
-int32_t timing_delay;		///<记录延时时间
+int32_t timing_delay; ///<记录延时时间
 
 static void delay_config(int32_t prescaler);
 
@@ -19,11 +19,13 @@ static void delay_config(int32_t prescaler);
 @retval		None
 @note		这是一个阻塞函数
 */
-void delay_us(int32_t us){
+void delay_us(int32_t us)
+{
 	delay_config(PRESCALER_US);
-	
-	timing_delay=us;
-	while(timing_delay);
+
+	timing_delay = us;
+	while (timing_delay)
+		;
 }
 /**
 @brief		毫秒级延时
@@ -31,11 +33,13 @@ void delay_us(int32_t us){
 @retval		None
 @note		这是一个阻塞函数
 */
-void delay_ms(int32_t ms){
+void delay_ms(int32_t ms)
+{
 	delay_config(PRESCALER_MS);
-	
-	timing_delay=ms;
-	while(timing_delay);
+
+	timing_delay = ms;
+	while (timing_delay)
+		;
 }
 /**
 @brief		毫秒级延时
@@ -43,10 +47,11 @@ void delay_ms(int32_t ms){
 @retval		None
 @note		这是一个非阻塞函数，需要结合delay_get_timing_delay函数使用
 */
-void delay_ms_without_block(int32_t ms){
+void delay_ms_without_block(int32_t ms)
+{
 	delay_config(PRESCALER_MS);
-	
-	timing_delay=ms;
+
+	timing_delay = ms;
 }
 /**
 @brief		获取当前剩余的延时时间
@@ -54,7 +59,8 @@ void delay_ms_without_block(int32_t ms){
 @retval		当前剩余的延时时间
 @note		需要结合delay_ms_without_block函数使用
 */
-int32_t delay_get_timing_delay(void){
+int32_t delay_get_timing_delay(void)
+{
 	return timing_delay;
 }
 /**
@@ -63,8 +69,9 @@ int32_t delay_get_timing_delay(void){
 @retval		None
 @note		此函数仅仅是提供给SysTick_Handler调用
 */
-void timing_delay_decrement(void){
-	if(timing_delay)
+void timing_delay_decrement(void)
+{
+	if (timing_delay)
 		--timing_delay;
 }
 /**
@@ -72,8 +79,10 @@ void timing_delay_decrement(void){
 @param		prescaler 可选PRESCALER_US，PRESCALER_MS
 @retval		None
 */
-static void delay_config(int32_t prescaler){
-	while(SysTick_Config(SystemCoreClock/prescaler)){
+static void delay_config(int32_t prescaler)
+{
+	while (SysTick_Config(SystemCoreClock / prescaler))
+	{
 		printf("In function delay_config:SysTick_Config failed\n");
 	}
 }

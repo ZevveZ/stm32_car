@@ -37,7 +37,7 @@ void pid_control(int32_t step0, int32_t step1);
 @param		point1 左边电机在一秒要达到的脉冲数
 @retval		None
 */
-void pid_set_point(int32_t point0,int32_t point1);
+void pid_set_point(int32_t point0, int32_t point1);
 
 #if defined(DEBUG_PID)
 /**
@@ -50,7 +50,7 @@ void pid_set_point(int32_t point0,int32_t point1);
 @retval		None
 @note		在调试PID的参数时才需要使用此函数
 */
-void pid_debug_params(uint32_t pwm,float pd,float ti,float td,MOTOR_DIRECTION dir);
+void pid_debug_params(uint32_t pwm, float pd, float ti, float td, MOTOR_DIRECTION dir);
 #endif
 #endif
 /**

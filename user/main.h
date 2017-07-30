@@ -4,10 +4,9 @@
 @author		Zev
 */
 
-
 #ifndef __MAIN_H
 #define __MAIN_H
 
-#define PI 3.14f	///<π的近似值
+#define PI 3.14f ///<π的近似值
 
 #endif
