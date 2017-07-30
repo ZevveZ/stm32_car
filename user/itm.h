@@ -1,7 +1,7 @@
 /**
-@file		itm.h
-@brief		包含此文件后，可以实现通过Jlink发送调试信息给上位机，通过Keil的调试窗口直接查看
-@author		Zev
+@file       itm.h
+@brief      包含此文件后，可以实现通过Jlink发送调试信息给上位机，通过Keil的调试窗口直接查看
+@author     Zev
 */
 
 #ifndef ITM_H

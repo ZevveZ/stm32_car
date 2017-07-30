@@ -1,7 +1,7 @@
 /**
-@file		main.h
-@brief		定义公共变量
-@author		Zev
+@file       main.h
+@brief      定义公共变量
+@author     Zev
 */
 
 #ifndef __MAIN_H

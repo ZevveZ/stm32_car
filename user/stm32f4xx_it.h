@@ -56,28 +56,28 @@ void PendSV_Handler(void);
 */
 void SysTick_Handler(void);
 /**
-@brief		记录定时器1的溢出计数
-@param		None
-@retval		None
+@brief      记录定时器1的溢出计数
+@param      None
+@retval     None
 */
 void TIM1_UP_TIM10_IRQHandler(void);
 /**
-@brief		记录定时器8的溢出计数
-@param		None
-@retval		None
+@brief      记录定时器8的溢出计数
+@param      None
+@retval     None
 */
 void TIM8_UP_TIM13_IRQHandler(void);
 /**
-@brief		定时器2每隔100ms会触发此中断进行PID控制，因此PID的采样周期为100ms
-@param		None
-@retval		None
+@brief      定时器2每隔100ms会触发此中断进行PID控制，因此PID的采样周期为100ms
+@param      None
+@retval     None
 */
 void TIM1_CC_IRQHandler(void);
 /**
-@brief		用于调试模糊决策算法的距离参数，包括安全阈值，障碍物距离远，障碍物距离近，模糊逻辑的作用时间，模糊逻辑算法的时间变化量，速度快的型心，速度慢的型心（参考论文模糊逻辑算法）
-@param		None
-@retval		None
-@note		通过调整上述的参数可以优化小车的避障效果；距离单位为m，时间单位为ms，速度单位为dm/s
+@brief      用于调试模糊决策算法的距离参数，包括安全阈值，障碍物距离远，障碍物距离近，模糊逻辑的作用时间，模糊逻辑算法的时间变化量，速度快的型心，速度慢的型心（参考论文模糊逻辑算法）
+@param      None
+@retval     None
+@note       通过调整上述的参数可以优化小车的避障效果；距离单位为m，时间单位为ms，速度单位为dm/s
 */
 void USART2_IRQHandler(void);
 #ifdef __cplusplus

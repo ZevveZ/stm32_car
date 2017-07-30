@@ -1,11 +1,11 @@
 /**
-@file		delay.h
-@brief		定义与延时有关的函数接口
-@author		Zev
+@file       delay.h
+@brief      定义与延时有关的函数接口
+@author     Zev
 */
 /**
 @addtogroup delay
-@brief		延时模块
+@brief      延时模块
 @{
 */
 #ifndef __DELAY_H
